@@ -125,7 +125,7 @@ if df is not None:
                 if not anomaly_df.empty:
                     st.dataframe(anomaly_df, use_container_width=True)
                 else:
-                    st.info("No anomalies detected in the selected features.")
+                    st.info("No anomalies detected in the chosen features.")
 
                 # ---------- Performance Metrics ----------
                 if metrics:
