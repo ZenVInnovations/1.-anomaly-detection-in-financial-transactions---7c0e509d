@@ -136,9 +136,9 @@ if df is not None:
                     st.write(f"**Accuracy**: {metrics['accuracy']:.2f}")
 
                 # ---------- Closing Summary ----------
-                st.markdown("### ✅ Report Summary")
+                st.markdown("### ✅ Report Summary Overview")
                 st.success("""
-                ✅ The anomaly detection process has successfully completed.
+                ✅ The anomaly detection process has been successfully completed.
 
                 🔍 What we did:
                 - Analyzed the selected numerical features using the chosen model.
