@@ -70,3 +70,11 @@ This project helps detect suspicious financial transactions by learning typical 
 ```bash
 git clone https://github.com/yourusername/anomaly-detection-app.git
 cd anomaly-detection-app
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+
+3. Run the Streamlit app:
+```bash
+streamlit run app.py
+
