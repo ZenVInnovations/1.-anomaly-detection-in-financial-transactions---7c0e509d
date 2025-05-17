@@ -81,3 +81,36 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+
+## 🗂 Folder Structure
+
+```bash
+.
+├── app.py
+├── models/
+│   ├── isolation_forest.py
+│   └── autoencoder.py
+├── sample.csv
+├── requirements.txt
+└── README.md
+```
+
+## 📄 Sample Dataset Format
+Your CSV file should include:
+
+Numeric columns (e.g. transaction_amount, account_balance)
+
+Optional: 'transaction_date' for time series visualization
+
+Optional: 'true_label' column with 0 (normal) and 1 (anomaly) labels for evaluation
+
+## 🧩 Limitations & Future Work
+Autoencoder may overfit small datasets — adjust training size or threshold logic as needed
+
+- No advanced fraud-specific features engineered
+
+- Cannot detect semantic fraud (requires NLP or rule-based analysis)
+
+- Future: deploy with authentication, alerting, real-time stream processing
+
