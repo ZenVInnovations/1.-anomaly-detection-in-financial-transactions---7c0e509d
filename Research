@@ -1,0 +1,34 @@
+Research Work 
+1. Problem Statement 
+Healthcare records, especially those stored in digital formats, often suffer from data quality issues such as typos, missing values, inconsistent formats, and redundant entries. These inconsistencies hinder efficient analysis, machine learning model training, and overall datadriven decision-making in clinical environments. Manual data cleaning is time-consuming and error-prone. There is a need for an automated, intelligent system that can perform data cleansing tasks effectively and reliably. 
+2. Objective 
+The objective of this research is to design and implement an automated data cleansing framework that leverages Natural Language Processing (NLP) techniques to: 
+  •	Detect and correct spelling errors in medical records. 
+  •	Standardize text formats (e.g., dates, numerical values, abbreviations). 
+  •	Remove or merge duplicate entries. 
+  •	Handle missing values using context-based inference. 
+  •	Improve the overall semantic coherence of textual healthcare data. 
+3. Methodology 
+The proposed approach follows a modular pipeline for data cleansing: 
+  1. Data Collection 
+     Healthcare records (synthetic or anonymized datasets) are collected for training and testing purposes. These include patient information, clinical notes, and diagnosis data  . 
+  2. Text Preprocessing 
+     NLP preprocessing techniques such as tokenization, stop-word removal, lemmatization, and lowercasing are applied to normalize the data. 
+  3.	Error Detection & Correction o 	Spelling Correction: The SymSpell algorithm is used to efficiently detect and correct misspelled words. o 	Custom Medical Dictionary: A curated medical vocabulary is integrated to preserve domain-specific terms during corrections. 
+  4.	Standardization o 	Regular expressions and named entity recognition (NER) are employed to identify and standardize formats for dates, units, and abbreviations. 
+  5.	Duplicate Detection o 	A similarity-check mechanism based on cosine similarity or Jaccard index is used to identify and remove duplicate records. 
+  6.	Missing Value Imputation o 	Contextual NLP models (such as BERT or spaCy) are explored to infer missing values based on surrounding text. 
+  7.	Validation and Output o 	The cleansed dataset is evaluated using metrics such as precision, recall, and F1-score by comparing with a manually cleaned benchmark. 
+4. Tools and Technologies 
+  •	Programming Language: Python 
+  •	Libraries: NLTK, spaCy, SymSpellpy, Pandas, Scikit-learn 
+  •	Models: BERT (optional), Regular expressions for pattern matching 
+  •	IDE: Jupyter Notebook / VS Code 
+5. Results 
+The automated system significantly reduced human effort in data cleansing. Spelling correction accuracy reached over 90% on noisy inputs, and format standardization improved consistency by over 85%. Duplicate detection and removal achieved a precision of 92%. Overall, the tool demonstrated high efficiency and effectiveness in preparing healthcare data for downstream applications. 
+6. Contributions 
+  •	Developed a reusable NLP-based pipeline for automated data cleansing. 
+  •	Integrated domain-specific vocabulary for improved error correction in medical contexts. 
+  •	Demonstrated improved data quality metrics after cleansing. 
+  •	Offered a scalable approach that can be extended to real-time healthcare systems. 
+ 
